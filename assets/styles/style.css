@@ -222,31 +222,76 @@ footer a:hover {
             font-size: 1.5rem;
         }
 
-        /* Pilares */
-        #pilares {
-            padding: 60px 20px;
-            background-color: #f4f9ff;
-            text-align: center;
-        }
+/* Sección Pilares */
+#pilares {
+    padding: 60px 20px;
+    background: linear-gradient(45deg, #2bbfe4, #eaecc6); /* Gradiente de fondo */
+    text-align: center;
+}
 
-        #pilares .card {
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+/* Títulos */
+#pilares .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2a3d66;
+}
 
-        #pilares .card:hover {
-            transform: translateY(-10px);
-        }
+/* Estilo de las tarjetas */
+#pilares .card {
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    background-color: white;
+}
 
-        #pilares h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
+#pilares .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Efecto al elevarse */
+}
+
+/* Iconos */
+#pilares .card-icon {
+    font-size: 3rem;
+    color: #5ba4ff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+#pilares .card:hover .card-icon {
+    color: #2a3d66; /* Cambiar color del icono en hover */
+}
+
+/* Títulos de las tarjetas */
+#pilares .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a3d66;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+#pilares .card-text {
+    font-size: 1.2rem;
+    color: #4a5e80;
+    line-height: 1.6;
+}
+
+/* Espaciado */
+#pilares .row {
+    margin: 0 -15px; /* Ajuste para mejor alineación */
+}
+
+#pilares .col-md-4 {
+    padding: 15px; /* Separación entre columnas */
+}
+
 
         /* Formulario */
         #contacto {
-            background: linear-gradient(45deg, #2a3d66, #5ba4ff);
+            background: linear-gradient(45deg, #2bbfe4, #eaecc6);
             color: white;
             padding: 60px 20px;
             text-align: center;
