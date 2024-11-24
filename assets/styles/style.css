@@ -1,0 +1,352 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif; /* Fuente más moderna */
+}
+
+/* Body Styles */
+body {
+    background-color: #f4f9ff; /* Light blue tint for calmness and transparency */
+    color: #2a3d66; /* Deep navy blue for readability */
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2a3d66; /* Navy blue for authority */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #5ba4ff; /* Bright blue for disruption */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    font-weight: 700; /* Bold font for stronger impact */
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #dbe6f6; /* Light, complementary tone for subtext */
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #e3f1ff; /* Subtle highlight effect */
+}
+
+.navbar-brand img {
+    transition: none; /* Disable effects for logo */
+}
+
+.nav-link {
+    text-transform: uppercase; /* Modern style with uppercase letters */
+    font-weight: bold;
+    color: #2a3d66;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #5ba4ff;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Section */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    color: #2a3d66;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    /*border-left: 6px solid #5ba4ff;*/
+    padding-left: 10px;
+}
+
+section p {
+    color: #4a5e80; /* Softer blue for secondary content */
+    font-size: 1.1rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    background-color: #5ba4ff; /* Bright blue to stand out */
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    color: #2a3d66;
+    text-align: justify;
+}
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    background-color: #2a3d66;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cta a {
+    text-decoration: none;
+    color: #2a3d66;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #5ba4ff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a3d66;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #dbe6f6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5ba4ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+
+        /* Portada */
+        #portada {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #portada video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #portada .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+        }
+
+        #portada .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #portada h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        #portada p {
+            font-size: 1.5rem;
+        }
+
+        /* Pilares */
+        #pilares {
+            padding: 60px 20px;
+            background-color: #f4f9ff;
+            text-align: center;
+        }
+
+        #pilares .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        #pilares .card:hover {
+            transform: translateY(-10px);
+        }
+
+        #pilares h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        /* Formulario */
+        #contacto {
+            background: linear-gradient(45deg, #2a3d66, #5ba4ff);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contacto h2 {
+            margin-bottom: 20px;
+        }
+
+        #contacto form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #contacto form input,
+        #contacto form textarea,
+        #contacto form button {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        #contacto form input,
+        #contacto form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contacto form button {
+            background-color: #2a3d66;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contacto form button:hover {
+            background-color: #5ba4ff;
+        }
+
+
+/* para animar el subtitulo */
+
+#animated-h2 {
+    font-size: 2rem;
+    white-space: nowrap; /* Evita que el texto se parta */
+    overflow: hidden; /* Oculta el texto fuera del contenedor */
+    display: inline-block;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: typing 5s steps(40, end), blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Inicia con el texto oculto */
+    }
+    to {
+        width: 100%; /* Muestra todo el texto */
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(242, 244, 245); /* Simula el parpadeo del cursor */
+    }
+}
+
+/* Subrayado animado automático */
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px; /* Grosor del subrayado */
+    background-color: rgb(46, 160, 253); /* Color del subrayado */
+    animation: underlineExpand 3s ease-out forwards; /* Automático */
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0; /* Línea comienza invisible */
+    }
+    to {
+        width: 100%; /* Línea cubre toda la palabra */
+    }
+}
