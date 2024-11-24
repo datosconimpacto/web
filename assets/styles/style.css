@@ -93,64 +93,64 @@ section p {
     font-size: 1.1rem;
 }
 
-/* Cards */
-.card {
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 20px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card-header {
-    background-color: #5ba4ff; /* Bright blue to stand out */
-    color: white;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Sección Título */
+.section-title {
     text-align: center;
-}
-
-.card-body {
-    padding: 20px;
+    font-size: 2.5rem;
     color: #2a3d66;
-    text-align: justify;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
-/* Call to Action */
-.cta {
-    text-align: center;
-    background-color: #2a3d66;
-    color: white;
+/* Estilo Mejorado de Tarjetas */
+.enhanced-card {
+    background: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
     padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd; /* Borde sutil */
 }
 
-.cta h2 {
+.enhanced-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos en la parte superior */
+.card-icon {
+    font-size: 3rem;
+    color: #5ba4ff;
+    margin-bottom: 15px;
+}
+
+/* Títulos de las tarjetas */
+.enhanced-card .card-title {
     font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a3d66;
     margin-bottom: 10px;
 }
 
-.cta a {
-    text-decoration: none;
-    color: #2a3d66;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+/* Texto de las tarjetas */
+.enhanced-card .card-text {
+    font-size: 1rem;
+    color: #4a5e80;
+    line-height: 1.6;
 }
 
-.cta a:hover {
-    background-color: #5ba4ff;
-    color: white;
+/* Efecto hover de colores */
+.enhanced-card:hover .card-icon {
+    color: #2a3d66;
 }
+
+.enhanced-card:hover .card-title {
+    color: #5ba4ff;
+}
+
+
 
 /* Footer */
 footer {
