@@ -582,19 +582,19 @@ body {
 }
 
 .gradient1 {
-    background: linear-gradient(135deg, #0fd85c, #e5ff00);
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
 }
 
 .gradient2 {
-    background: linear-gradient(135deg, #E9C46A, #F4A261);
+    background: linear-gradient(135deg, #2b5876, #4e4376);
 }
 
 .gradient3 {
-    background: linear-gradient(135deg, #F4A261, #E76F51);
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
 }
 
 .gradient4 {
-    background: linear-gradient(135deg, #05ff1a, #f0f3f3);
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
 }
 
 .btn-primary {
