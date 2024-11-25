@@ -135,6 +135,8 @@ section p {
 
 /* Estilo Mejorado de Tarjetas */
 .enhanced-card {
+    max-width: 350px; /* Ajusta el ancho máximo de las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas */
     background: white;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -538,3 +540,73 @@ footer a:hover {
         transform: translateY(0);
     }
 }
+
+
+/*QUIENES SOMOS*/
+
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+}
+
+.section {
+    padding: 60px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centramos el texto */
+}
+
+.container {
+    max-width: 800px; /* Limitamos el ancho del contenido */
+    margin: 0 auto;
+}
+
+.text-block h3 {
+    font-size: 4rem; /* Tamaño grande para los encabezados */
+    font-weight: 700; /* Peso fuerte para un look moderno */
+    margin-bottom: 15px;
+    line-height: 1.3; /* Espaciado para mejorar legibilidad */
+}
+
+.text-block p {
+    font-size: 1.5rem; /* Aumentar tamaño de los párrafos */
+    font-weight: 400; /* Peso ligero para contraste con los h3 */
+    line-height: 1.8; /* Espaciado para mejorar lectura */
+    margin-bottom: 30px; /* Espacio adicional debajo de los párrafos */
+}
+
+.gradient1 {
+    background: linear-gradient(135deg, #0fd85c, #e5ff00);
+}
+
+.gradient2 {
+    background: linear-gradient(135deg, #E9C46A, #F4A261);
+}
+
+.gradient3 {
+    background: linear-gradient(135deg, #F4A261, #E76F51);
+}
+
+.gradient4 {
+    background: linear-gradient(135deg, #05ff1a, #f0f3f3);
+}
+
+.btn-primary {
+    font-size: 1.2rem; /* Tamaño más grande para el botón */
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #2A9D8F; /* Mantener la identidad del diseño */
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1B6B60; /* Color más oscuro al pasar el cursor */
+}
+
