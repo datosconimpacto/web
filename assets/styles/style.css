@@ -67,9 +67,7 @@ header p {
     color: #dbe6f6; /* Light, complementary tone for subtext */
 }
 
-div {
-    border: 2px solid black;
-  }
+
 
 /* Navigation */
 .navbar {
