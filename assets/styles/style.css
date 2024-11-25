@@ -208,49 +208,139 @@ footer a:hover {
 
 
 
-        /* Portada */
-        #portada {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
+/* Portada */
+/* Portada */
+#portada {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
-        #portada video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+#portada video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        #portada .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
-        }
+#portada .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+}
 
-        #portada .content {
-            position: relative;
-            z-index: 2;
-            color: white;
-            text-align: center;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+#portada .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    box-sizing: border-box;
+}
 
-        #portada h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
+/* Titulo principal */
+#portada h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Permite que el texto se ajuste a la línea */
+}
 
-        #portada p {
-            font-size: 1.5rem;
-        }
+/* Subtítulo con efecto de escritura */
+#animated-h2 {
+    font-size: 2rem;
+    white-space: nowrap; /* Evita que el texto se parta */
+    overflow: hidden; /* Oculta el texto fuera del contenedor */
+    display: inline-block;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: typing 5s steps(40, end), blink 0.6s step-end infinite;
+    word-wrap: normal; /* Evita que se dividan las palabras */
+    text-align: center;
+}
 
+/* Animación de escribir letra a letra */
+@keyframes typing {
+    from {
+        width: 0; /* Inicia con el texto oculto */
+    }
+    to {
+        width: 100%; /* Muestra todo el texto */
+    }
+}
+
+/* Parpadeo del cursor */
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(242, 244, 245); /* Simula el parpadeo del cursor */
+    }
+}
+
+/* Subrayado animado automático */
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px; /* Grosor del subrayado */
+    background-color: rgb(46, 160, 253); /* Color del subrayado */
+    animation: underlineExpand 3s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0; /* Línea comienza invisible */
+    }
+    to {
+        width: 100%; /* Línea cubre toda la palabra */
+    }
+}
+
+/* Ajustes en dispositivos pequeños */
+@media (max-width: 768px) {
+    #portada h1 {
+        font-size: 2rem;
+    }
+
+    #portada h2 {
+        font-size: 1.5rem;
+        word-wrap: break-word; /* Permite salto de línea en móviles */
+        white-space: normal;
+    }
+}
+
+/* Asegura que el texto en pantallas más pequeñas se ajuste correctamente */
+@media (max-width: 480px) {
+    #portada h1 {
+        font-size: 1.5rem;
+    }
+
+    #portada h2 {
+        font-size: 1.2rem;
+        word-wrap: break-word; /* Asegura que se ajusten al ancho */
+        white-space: normal;
+    }
+}
+
+
+
+/**/
 
 #nosotros h1 {
 
@@ -381,61 +471,6 @@ footer a:hover {
             background-color: #5ba4ff;
         }
 
-
-/* para animar el subtitulo */
-
-#animated-h2 {
-    font-size: 2rem;
-    white-space: nowrap; /* Evita que el texto se parta */
-    overflow: hidden; /* Oculta el texto fuera del contenedor */
-    display: inline-block;
-    border-right: 2px solid rgb(255, 255, 255);
-    animation: typing 5s steps(40, end), blink 0.6s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0; /* Inicia con el texto oculto */
-    }
-    to {
-        width: 100%; /* Muestra todo el texto */
-    }
-}
-
-@keyframes blink {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(242, 244, 245); /* Simula el parpadeo del cursor */
-    }
-}
-
-/* Subrayado animado automático */
-.underline {
-    position: relative;
-    display: inline-block;
-}
-
-.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px; /* Grosor del subrayado */
-    background-color: rgb(46, 160, 253); /* Color del subrayado */
-    animation: underlineExpand 3s ease-out forwards; /* Automático */
-}
-
-@keyframes underlineExpand {
-    from {
-        width: 0; /* Línea comienza invisible */
-    }
-    to {
-        width: 100%; /* Línea cubre toda la palabra */
-    }
-}
 
 
 /*Estilos de Datos con impacto tarjeta*/
