@@ -226,9 +226,17 @@ footer a:hover {
             font-size: 1.5rem;
         }
 
+
+#nosotros h1 {
+
+    font-size: 5rem;
+}        
 #nosotros p {
             font-size: 1.2rem;
+            font-family: bold;
         }
+
+
 
 /* Sección Pilares */
 #pilares {
@@ -401,5 +409,52 @@ footer a:hover {
     }
     to {
         width: 100%; /* Línea cubre toda la palabra */
+    }
+}
+
+
+/*Estilos de Datos con impacto tarjeta*/
+.col-md-3 {
+    background: #f4f9ff; /* Fondo blanco con transparencia */
+}
+
+/* Efectos en el título principal */
+.impacto-title {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Efectos en las palabras rotativas */
+.impacto-loop span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0072ff;
+    /*animation: fadeInOut 2s ease-in-out infinite;*/
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -62,22 +62,24 @@
     <!-- Quienes somos-->
  
     <section id="nosotros">
-    
         <div class="container-fluid overflow-hidden p-0">
             <div class="row g-0">
                 <!-- Tarjeta a la derecha -->
-                <div class="col-md-3 order-md-2 d-flex justify-content-center align-items-center">
-                    <!-- Imagen sin bordes -->
-                     <!--
-                    <img src="assets/images/logo_solo.png" class="img-fluid" alt="Logo de Datos con Impacto">
-                -->
+                <div class="col-md-3 order-md-2 d-flex justify-content-center align-items-center bg-light">
+                    <!-- Contenedor del texto con efecto -->
+                    <div class="text-center" style="position: relative;">
+                        <h1 class="impacto-title display-4 fw-bold mb-3">Datos con Impacto</h1>
+                        <p class="fs-5 fw-light impacto-loop">
+                            <span id="impacto-loop"></span>
+                        </p>
+                    </div>
                 </div>
                 <!-- Contenido principal a la izquierda -->
                 <div class="col-md-6 order-md-1 my-auto" style="padding: 5vw;">
                     <div class="lc-block mb-4">
                         <div>
                             <h2>¿Quiénes Somos?</h2>
-                            <p ><strong>Datos con Impacto</strong> surge de una pregunta simple pero transformadora: <strong>¿qué hacemos cada día para mejorar la sociedad 
+                            <p><strong>Datos con Impacto</strong> surge de una pregunta simple pero transformadora: <strong>¿qué hacemos cada día para mejorar la sociedad 
                             de la que formamos parte?</strong>.<br>
                             Impulsados por nuestra pasión por la ciencia y el análisis de datos, 
                             y profundamente comprometidos con causas sociales, creemos firmemente en el enorme potencial de los datos para generar cambios significativos.❤️ <br>
@@ -86,15 +88,13 @@
                             podemos aportar al desarrollo de una <strong>sociedad más justa y sostenible.</strong></p>
                         </div>
                     </div>
-        
+    
                     <div class="lc-block">
                         <a class="btn btn-primary" href="views/contacto.html" role="button">¡Conócenos!</a>
                     </div><!-- /lc-block -->
                 </div>
             </div>
         </div>
-        
-        
     </section>
     
      
@@ -163,6 +163,41 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Rotar palabras del quienes somos-->
+<script>
+// Palabras que van a rotar
+const palabras = ["Social", "Económico", "Medio ambiental", "Educacional", "Previsional"];
+let index = 0;
+
+// Seleccionar el elemento donde se insertarán las palabras
+const loopElement = document.getElementById("impacto-loop");
+
+// Función para escribir palabra letra por letra
+function escribirPalabra(palabra, callback) {
+    let i = 0;
+    loopElement.textContent = ""; // Limpiar el contenido antes de empezar a escribir
+    const intervalo = setInterval(() => {
+        loopElement.textContent += palabra[i];
+        i++;
+        if (i === palabra.length) {
+            clearInterval(intervalo); // Dejar de escribir cuando la palabra esté completa
+            setTimeout(callback, 3000); // Esperar 3 segundos antes de cambiar a la siguiente palabra
+        }
+    }, 100); // Tiempo entre cada letra
+}
+
+function cambiarPalabra() {
+    // Obtener la palabra actual
+    const palabraActual = palabras[index];
+    // Incrementar el índice, y reiniciar si llega al final de la lista
+    index = (index + 1) % palabras.length;
+    // Escribir la palabra
+    escribirPalabra(palabraActual, cambiarPalabra);
+}
+
+// Iniciar la animación con la primera palabra
+escribirPalabra(palabras[index], cambiarPalabra);
 </script>
 
 </html>
