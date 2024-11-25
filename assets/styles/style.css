@@ -108,7 +108,6 @@ div {
 /* Section */
 section {
     margin: 40px 0;
-    border-bottom: 3px solid #5ba4ff; /* Borde inferior con un color azul claro */
     padding-bottom: 20px; /* Asegura que haya espacio debajo del contenido */
 }
 
