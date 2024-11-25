@@ -13,6 +13,31 @@ body {
     line-height: 1.6;
 }
 
+/* Estilos personalizados para el botón */
+.btn.btn-primary {
+    background: linear-gradient(45deg, #2A9D8F, #264653); /* Gradiente de color */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 50px; /* Bordes redondeados */
+    font-size: 18px;
+    transition: all 0.3s ease; /* Transición suave para efectos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: none; /* Quitar borde predeterminado */
+}
+
+.btn.btn-primary:hover {
+    background: linear-gradient(45deg, #264653, #2A9D8F); /* Invertir gradiente en hover */
+    transform: translateY(-3px); /* Efecto de movimiento al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.btn.btn-primary:active {
+    transform: translateY(1px); /* Pequeña compresión al hacer clic */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Vuelve a la sombra original */
+}
+
 /* Main Container */
 .container {
     width: 90%;
